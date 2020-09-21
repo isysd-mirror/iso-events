@@ -1,0 +1,36 @@
+{
+  "name": "iso-events",
+  "id": "events",
+  "version": "3.0.0",
+  "description": "Node's event emitter for all engines.",
+  "keywords": [
+    "events",
+    "eventEmitter",
+    "eventDispatcher",
+    "listeners"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isysd-mirror/iso-events.git",
+    "web": "https://github.com/isysd-mirror/iso-events"
+  },
+  "bugs": {
+    "url": "http://github.com/isysd-mirror/iso-events/issues/"
+  },
+  "main": "./events.node.js",
+  "module": "./events.js",
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "devDependencies": {
+    "airtap": "^1.0.0",
+    "isarray": "^2.0.2",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "node tests/index.js",
+    "test:browsers": "airtap -- tests/index.js"
+  },
+  "license": "MIT"
+}
